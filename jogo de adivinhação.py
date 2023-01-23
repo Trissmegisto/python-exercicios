@@ -38,7 +38,7 @@ for rodadas in range(1, tentativas + 1):
         continue
     else:
         if (acerto):
-            print("Você acertou :)")
+            print("Você acertou e fez {} pontos)".format(pontos))
             break
         else:
             if (maior):
@@ -48,5 +48,5 @@ for rodadas in range(1, tentativas + 1):
 
         pontos_perdidos = abs(chute - numero_secreto)
         pontos = pontos - pontos_perdidos
- 
-print("Fim do jogo! O número certo é: ", numero_secreto, "e sua pontuação foi: ", pontos)
+
+print("Você perdeu :(, O número certo é {} e sua pontuação foi {}".format(numero_secreto, pontos))
